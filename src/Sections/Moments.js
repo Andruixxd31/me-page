@@ -1,10 +1,9 @@
 import React from 'react';
+import Galery from '../components/Galery';
 
 const Moments = () => { 
     return(
-        <div className="App-header">
-            <h1>Moments</h1>
-        </div>
+        <Galery/>
     );
 }
 

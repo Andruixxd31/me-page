@@ -1,4 +1,5 @@
 import React from 'react';
+import SocialMedia from '../components/SocialMedia';
 
 const Me = () => { 
     return(
@@ -7,8 +8,8 @@ const Me = () => {
             {/* Image of myself and small introduction */}
             <div className=" pa4 tl flex items-center">
             <img
-                src="http://tachyons.io/img/logo.jpg"
-                className="pa4 h10 w10 dib white" alt="Yep. Thats Me"/>
+                src="/photos/me.jpeg"
+                className="pa4 h5 w5 dib white" alt="Yep. Thats Me"/>
             <p className="dib white f3"> 
                 Hello, Good to see you!. <br/> 
                 My name is Andres Diaz de Leon. I'm 21 years old.
@@ -82,27 +83,48 @@ const Me = () => {
             </div>
 
             {/* Skills and Habilities section */}
-            <section class="false false b--black-10 flex flex-column flex-row-l items-stretch justify-stretch">
-                <div className="bg-light-green flex w-50-l items-center justify-center pa5-l pa4 order-0-l">
+            <section className="b--black-10 flex">
+                <div className="bg-light-green flex w-50-l items-center justify-center">
                     <h1 className="white tc f3">Skills</h1>
                 </div>
-                <div class="bg-dark-gray flex w-50-l items-center content-start justify-center-ns justify-start order-1-l">
-                    <span class="pa6-l ph4-m pv2 ph3 w-60-m">
-
+                <div className="bg-dark-gray flex w-50 items-center">
+                    <span>
+                        <div>
+                            <div className="w-15 white f4 tl pa2 mr2">
+                                <ul>
+                                    <li>Programming</li>
+                                    <ul>
+                                        <li>OOP</li>
+                                        <li>Database</li>
+                                        <li>FrontEnd Dev</li>
+                                        <li>Data Structures</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
                     </span>
                 </div>
             </section>
 
-            <section class="false false b--black-10 flex flex-column flex-row-l items-stretch justify-stretch">
-                <div class="bg-dark-gray flex w-50-l items-center content-start justify-center-ns justify-start false">
-                    <span class="pa6-l ph4-m pv2 ph3 w-60-m">
-                        
+            <section className="b--black-10 flex tc">
+                <div className="bg-dark-gray flex w-50">
+                    <span className="tc">
+                        <div className="white f4 tc">
+                            <ul>
+                                <li>Leadership</li>
+                                <li>Entrepreneurship </li>
+                                <li>English</li>
+                                <li>Basic Italian</li>
+                            </ul>
+                        </div>
                     </span>
                 </div>
-                <div className="bg-light-blue flex w-50-l tr items-center justify-center pa5-l pa4 order-0-l">
+                <div className="bg-light-blue flex w-50-l items-center justify-center">
                     <h1 className="white tc f3">Habilities</h1>
                 </div>
             </section>
+
+            <SocialMedia/>
         </div>
     );
 }

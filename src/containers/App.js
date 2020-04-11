@@ -13,7 +13,7 @@ class App extends Component {
 
   render(){
     return (
-      <div className="App">
+      <div className="bg-washe">
         {/*React Router renders different components */}
         <Router>
           <Menu/>
